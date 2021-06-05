@@ -1,0 +1,145 @@
+.card {
+  background-color: #2a292e;
+  border-radius: 3rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+.card-header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-information svg {
+  color: #c5c4c8;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+.persona {
+  display: flex;
+  align-items: center;
+}
+
+.persona img {
+  margin-right: 2rem;
+  border-radius: 3rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.persona-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.normal-text {
+  line-height: 1.1;
+  color: white;
+  font-size: 1.8rem;
+}
+.small-text {
+  color: #c5c4c8;
+  font-size: 1.4rem;
+}
+p {
+  margin: 0;
+}
+
+.card-body {
+  margin: 0;
+}
+.card-body img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+.action-bar {
+  display: flex;
+  width: 100%;
+  background-color: #18181c;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.action-bar div {
+  color: #c5c4c8;
+}
+.action-bar div::after {
+  content: "⦿";
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-comment {
+  display: flex;
+  margin-top: 2rem;
+  align-content: center;
+  align-items: center;
+}
+.my-comment img {
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.my-comment input {
+  background-color: #444348;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 2rem;
+  flex: 1;
+  margin-left: 1rem;
+  outline: none;
+}
+.other-comments {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.comment-persona {
+  display: flex;
+}
+.other-comments img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.comment-persona .persona-text {
+  margin-left: 2rem;
+}
+.other-comments > .small-text {
+  margin-left: 5rem;
+}
+.like-button {
+  display: flex;
+  height: 4rem;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  color: white;
+  margin-top: 2rem;
+}
+.like-button::before {
+  content: "Like";
+  position: absolute;
+  left: 14%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+}
+.like-button::after {
+  content: "Comment";
+  position: absolute;
+  right: 7%;
+  padding-top: 5px;
+}
