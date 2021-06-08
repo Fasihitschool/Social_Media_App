@@ -76,3 +76,8 @@ h3 {
   color: white;
   flex: 1;
 }
+@media (min-width: 375px) and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

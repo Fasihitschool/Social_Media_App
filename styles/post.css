@@ -4,6 +4,28 @@
   margin: 1rem;
   margin-bottom: 4rem;
 }
+
+@media (max-width: 768px) {
+  .card {
+    background-color: #2a292e;
+    border-radius: 3rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    width: 150%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .card {
+    border-radius: 3rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    width: 220%;
+    font-size: 9px;
+  }
+}
+
 .card-header {
   padding: 1rem;
   width: 100%;
@@ -49,10 +71,29 @@
 p {
   margin: 0;
 }
-
+@media (min-width: 376px) and (max-width: 768px) {
+  p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
 .card-body {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .normal-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .normal-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10px;
+  }
+}
+
 .card-body img {
   max-height: 30vh;
   width: 100%;
@@ -73,6 +114,12 @@ p {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+@media (max-width: 376px) {
+  .action-bar div::after {
+    font-size: 8px;
+  }
+}
+
 .comment-section {
   display: flex;
   flex-direction: column;
@@ -120,6 +167,35 @@ p {
 .other-comments > .small-text {
   margin-left: 5rem;
 }
+
+@media (max-width: 768px) {
+  .small-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .small-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-footer {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .card-footer {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+  }
+}
+
 .like-button {
   display: flex;
   height: 4rem;
@@ -129,6 +205,7 @@ p {
   color: white;
   margin-top: 2rem;
 }
+
 .like-button::before {
   content: "Like";
   position: absolute;
@@ -137,9 +214,51 @@ p {
   vertical-align: top;
   padding-top: 5px;
 }
+@media (max-width: 768px) {
+  .like-button::before {
+    content: "Like";
+    position: absolute;
+    left: 4%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .like-button::before {
+    content: "Like";
+    position: absolute;
+    left: 4%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    font-size: 8px;
+  }
+}
+
 .like-button::after {
   content: "Comment";
   position: absolute;
   right: 7%;
   padding-top: 5px;
+}
+@media (max-width: 768px) {
+  .like-button::after {
+    content: "Comment";
+    position: absolute;
+    right: -3%;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .like-button::after {
+    content: "Comment";
+    position: absolute;
+    right: -3%;
+    padding-top: 5px;
+    font-size: 8px;
+  }
 }
